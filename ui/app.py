@@ -43,7 +43,7 @@ css = """
     
 """
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-model = torch.hub.load('isl-org/ZoeDepth', "ZoeD_N", pretrained=True).to(DEVICE).eval()
+model = torch.hub.load('isl-org/ZoeDepth', "ZoeD_K", pretrained=True).to(DEVICE).eval()
 
 title = "# ZoeDepth"
 description = """Official demo for **ZoeDepth: Zero-shot Transfer by Combining Relative and Metric Depth**.
